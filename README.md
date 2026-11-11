@@ -28,7 +28,18 @@ Windows 10 / Windows 11.
 
 ## Screenshots
 
-*Application screenshots coming soon.*
+### Main Interface
+
+![SmartFile main interface](main.png)
+
+### CSV Merge and Duplicate Removal
+
+![SmartFile merge preview](merge-preview.png)
+
+### Excel Export
+
+![SmartFile Excel export](excel-export.png)
+
 
 ## Privacy
 
