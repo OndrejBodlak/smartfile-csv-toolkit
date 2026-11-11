@@ -3,18 +3,15 @@ setlocal
 cd /d "%~dp0"
 
 echo ==========================================
-echo          SmartFile Windows Builder
+echo          SmartFile 1.0 Release Builder
 echo ==========================================
 echo.
-
-python -m pip install --upgrade pip
-if errorlevel 1 goto error
 
 python -m pip install -r requirements.txt
 if errorlevel 1 goto error
 
 echo.
-echo Building SmartFile...
+echo Building SmartFile 1.0...
 python -m PyInstaller --noconfirm --clean --windowed --name SmartFile --icon=smartfile.ico --add-data "smartfile.ico;." --collect-all customtkinter --collect-all tkinterdnd2 smartfile_release.py
 if errorlevel 1 goto error
 
