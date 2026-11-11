@@ -26,19 +26,21 @@ Windows 10 / Windows 11.
 - CSV export compatible with Czech Excel settings
 - Modern dark user interface
 
+
 ## Screenshots
 
 ### Main Interface
 
-![SmartFile main interface](main.png)
+![SmartFile main interface](smartfile-csv-toolkit/main.png)
 
 ### CSV Merge and Duplicate Removal
 
-![SmartFile merge preview](merge-preview.png)
+![SmartFile merge preview](smartfile-csv-toolkit/merge-preview.png)
 
 ### Excel Export
 
-![SmartFile Excel export](excel-export.png)
+![SmartFile Excel export](smartfile-csv-toolkit/excel-export.png)
+
 
 
 ## Privacy
