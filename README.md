@@ -1,75 +1,88 @@
 # SmartFile — CSV Toolkit
 
-**A lightweight Windows desktop app for cleaning, merging and inspecting CSV files.**
+**A lightweight Windows desktop application for cleaning, merging and managing CSV files.**
 
-SmartFile helps combine CSV exports, remove duplicate rows and preview the result before exporting. Files are processed locally on your computer.
-
-## Preview
-
-The application has a dark desktop interface with:
-- CSV import using a file picker or drag and drop
-- Merge multiple files, including files with different columns
-- Remove duplicate rows
-- Preview up to 500 rows
-- Row, column and duplicate counters
-- CSV export using a semicolon delimiter by default for Czech Excel regional settings
+SmartFile makes working with CSV files simple. Import multiple files, merge their data, remove duplicate rows and export the result in seconds.
 
 ## Download
 
-A packaged Windows build will be published in **GitHub Releases** after the release is verified. Until then, use the source instructions below.
+**[Download SmartFile 1.0.0 for Windows](https://github.com/OndrejBodlak/smartfile-csv-toolkit/releases/latest)**
 
-## Run from source (Windows)
+1. Download the ZIP archive.
+2. Extract the ZIP file.
+3. Open the extracted folder.
+4. Run `SmartFile.exe`.
 
-1. Install Python 3.11 or newer.
-2. Clone or download this repository.
-3. Open PowerShell in the `smartfile-csv-toolkit` folder.
-4. Install dependencies and start the app:
+Windows 10 / Windows 11.
+
+## Features
+
+- Drag & drop CSV file import
+- Merge multiple CSV files
+- Support for different column structures
+- Automatic duplicate removal
+- Data preview (up to 500 rows)
+- Row and column statistics
+- CSV export compatible with Czech Excel settings
+- Modern dark user interface
+
+## Screenshots
+
+*Application screenshots coming soon.*
+
+## Privacy
+
+SmartFile processes files locally on your computer. Your CSV data is not uploaded to external servers.
+
+## Built With
+
+- Python 3.11+
+- CustomTkinter
+- tkinterdnd2
+- PyInstaller
+
+## Run From Source
 
 ```powershell
 python -m pip install -r requirements.txt
 python smartfile_release.py
 ```
 
-## Build the Windows app
+## Build
 
-Run `build_windows.bat` from the project folder. The generated one-folder application will be placed in `dist\\SmartFile\\`.
+Run `build_windows.bat` to create the Windows application in `dist/SmartFile/`.
 
-**Important:** Share the complete `dist\\SmartFile\\` folder (or a ZIP of it), not only `SmartFile.exe`, because the `_internal` folder contains bundled runtime files.
-
-## Project structure
-
-```text
-smartfile-csv-toolkit/
-├── smartfile.py             # CSV processing functions and CLI
-├── smartfile_release.py     # Desktop GUI
-├── smartfile.ico            # Windows application icon
-├── build_windows.bat        # Windows build script
-├── requirements.txt
-├── samples/                 # Example CSV input files
-└── tests/                   # Automated tests
-```
-
-## Privacy
-
-SmartFile processes files locally. It does not upload CSV contents to a server.
+Share the complete folder, including `_internal`, rather than the EXE alone.
 
 ## Limitations
 
-- CSV files only; Excel workbooks (`.xlsx`) are not supported.
-- The preview is limited to 500 rows; export includes the full result.
+- CSV files only; `.xlsx` workbooks are not supported.
+- Preview is limited to 500 rows.
 - Duplicate detection compares values across all output columns.
-- Always test with copies of important files before using the app in a business-critical workflow.
 
-## Development
+## Project Structure
 
-Run the automated tests:
+```text
+smartfile-csv-toolkit/
+├── smartfile.py
+├── smartfile_release.py
+├── smartfile.ico
+├── requirements.txt
+├── build_windows.bat
+├── samples/
+└── tests/
+```
+
+## Tests
 
 ```powershell
 python -m unittest discover -s tests -v
 ```
 
-See [CHANGELOG.md](smartfile-csv-toolkit/CHANGELOG.md) for release notes.
+## Release History
+
+See [CHANGELOG.md](smartfile-csv-toolkit/CHANGELOG.md).
 
 ## License
 
-No open-source license has been added yet. Until a license is selected, standard copyright restrictions apply.
+No open-source license has been added yet.
