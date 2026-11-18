@@ -63,3 +63,9 @@ CSV files are read and processed locally. SmartFile does not upload your data to
 ## License
 
 Choose and add a license before accepting outside contributions or distributing modified versions.
+
+## CSV Cleanup Demo
+
+A separate demonstration shows how SmartFile-style processing can clean a fictional e-commerce product catalog, normalize values, detect duplicate SKUs and generate a customer-friendly HTML report.
+
+See the [CSV cleanup demo documentation](demo/README.md) for the sample data, processing steps, results and test instructions.
