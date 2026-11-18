@@ -1,0 +1,24 @@
+{
+    "input_file": "messy_products.csv",
+    "output_file": "clean_products.csv",
+    "statistics": {
+        "rows_read": 100,
+        "whitespace_cleaned": 65,
+        "prices_normalized": 96,
+        "categories_normalized": 44,
+        "missing_names": 3,
+        "missing_stock": 7,
+        "duplicates_removed": 4,
+        "rows_exported": 96
+    },
+    "notes": [
+        "Všechna produktová data v této ukázce jsou fiktivní.",
+        "Ceny jsou sjednoceny na dvě desetinná místa.",
+        "Neplatné nebo chybějící ceny zůstávají prázdné.",
+        "Záporné a nekonečné ceny jsou odmítnuty.",
+        "Produkty bez SKU jsou vyřazeny.",
+        "Duplicity SKU jsou rozpoznávány bez ohledu na velikost písmen.",
+        "Při duplicitě je zachován první výskyt produktu.",
+        "Chybějící názvy a skladové hodnoty jsou zaznamenány."
+    ]
+}
